@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3f3f88b7-3d8f-4a64-b0d7-2699a33c74b4": {
+      "ProjectGuid": "3f3f88b7-3d8f-4a64-b0d7-2699a33c74b4",
+      "DisplayName": "ModernCare",
+      "ColorIndex": 0
+    },
+    "9e19ec4e-d10e-457d-ac52-3f472aeed236": {
+      "ProjectGuid": "9e19ec4e-d10e-457d-ac52-3f472aeed236",
+      "DisplayName": "ModernCare",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
