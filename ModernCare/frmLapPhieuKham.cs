@@ -132,9 +132,6 @@ namespace ModernCare
                 command.CommandText = Request_delete;
                 command.ExecuteNonQuery();
                 savePhieu = conn.CreateCommand();
-
-               
-
                 DateTime date = DateTime.Today;
                 String save = "insert into PHIEUKHAMBENH (ID_Phieu, ID_BenhNhan, ID_BacSi, NgayKham, ChanDoan) values ('"+txtIDPhieu.Text+"', '"+ txtID.Text+"', '"+ frmLogin.idNV+ "','"+ date + "', '"+ IDbenh+"')";
                  savePhieu.CommandText= save;
@@ -224,7 +221,7 @@ namespace ModernCare
 
                 // command.CommandText = "insert into BENHNHAN (HoTen, GioiTinh, NamSinh,DiaChi,NgayKham, TrieuChung, TrangThai) VALUES ('"+txtName.Text+"','"+cbbGender.Text+ "','" + namsinh + "','" + txrAddress.Text + "','" + dateCome.Text + "','" + txtChanDoan.Text + "','"+"Chờ Khám"+"')'";
                 command.ExecuteNonQuery();
-                
+                conn.Close();
                 ReLoad();
             }
             catch (Exception ex)

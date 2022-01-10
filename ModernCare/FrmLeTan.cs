@@ -80,6 +80,7 @@ namespace ModernCare
         private void FrmLeTan_Load(object sender, EventArgs e)
         {
             loadData();
+            IDNV.Text = frmLogin.idNV;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -142,6 +143,13 @@ namespace ModernCare
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             loadData();
+        }
+
+        private void IDNV_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin lg = new frmLogin();
+            lg.Show();
         }
 
         private int checkGender(String gender)

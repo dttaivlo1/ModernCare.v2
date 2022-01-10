@@ -35,6 +35,7 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.dgvPhieuKham = new System.Windows.Forms.DataGridView();
             this.lbIDname = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhieuKham)).BeginInit();
             this.SuspendLayout();
             // 
@@ -111,12 +112,25 @@
             this.lbIDname.Size = new System.Drawing.Size(38, 16);
             this.lbIDname.TabIndex = 10;
             this.lbIDname.Text = "tên NV";
+            this.lbIDname.Click += new System.EventHandler(this.lbIDname_Click);
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(820, 11);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(197, 45);
+            this.simpleButton1.TabIndex = 11;
+            this.simpleButton1.Text = "Xem danh sách hoá đơn";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // frmThuNgan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1746, 768);
+            this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.lbIDname);
             this.Controls.Add(this.dgvPhieuKham);
             this.Controls.Add(this.btnTaoHD);
@@ -142,5 +156,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.DataGridView dgvPhieuKham;
         private DevExpress.XtraEditors.LabelControl lbIDname;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

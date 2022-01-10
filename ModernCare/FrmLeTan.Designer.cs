@@ -53,6 +53,7 @@
             this.lbCount = new DevExpress.XtraEditors.LabelControl();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnRefresh = new DevExpress.XtraEditors.SimpleButton();
+            this.IDNV = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTrieuChung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
@@ -321,11 +322,23 @@
             this.btnRefresh.Text = "Tải lại dữ liệu";
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // IDNV
+            // 
+            this.IDNV.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IDNV.Appearance.Options.UseFont = true;
+            this.IDNV.Location = new System.Drawing.Point(1416, 29);
+            this.IDNV.Name = "IDNV";
+            this.IDNV.Size = new System.Drawing.Size(109, 24);
+            this.IDNV.TabIndex = 26;
+            this.IDNV.Text = "Triệu Chứng";
+            this.IDNV.Click += new System.EventHandler(this.IDNV_Click);
+            // 
             // FrmLeTan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1631, 694);
+            this.Controls.Add(this.IDNV);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lbCount);
@@ -394,5 +407,6 @@
         private DevExpress.XtraEditors.LabelControl lbCount;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.SimpleButton btnRefresh;
+        private DevExpress.XtraEditors.LabelControl IDNV;
     }
 }

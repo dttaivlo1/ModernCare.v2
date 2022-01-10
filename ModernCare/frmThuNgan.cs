@@ -77,6 +77,19 @@ namespace ModernCare
             loadData();
         }
 
+        private void lbIDname_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin lg = new frmLogin();
+            lg.Show();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            HOADON hd = new HOADON(); ;
+            hd.Show();
+        }
+
         private void frmThuNgan_Load(object sender, EventArgs e)
         {
             lbIDname.Text = frmLogin.idNV;
