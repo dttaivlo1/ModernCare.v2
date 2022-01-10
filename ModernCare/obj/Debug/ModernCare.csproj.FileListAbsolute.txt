@@ -62,3 +62,5 @@ C:\Users\dttai\source\repos\ModernCare\ModernCare\obj\Debug\ModernCare.frmLeTan.
 C:\Users\dttai\source\repos\ModernCare\ModernCare\obj\Debug\ModernCare.frmAdmin.resources
 C:\Users\dttai\source\repos\ModernCare\ModernCare\obj\Debug\ModernCare.BacSi.resources
 C:\Users\dttai\source\repos\ModernCare\ModernCare\obj\Debug\ModernCare.frmLapPhieuKham.resources
+C:\Users\dttai\source\repos\ModernCare\ModernCare\obj\Debug\ModernCare.frmThuNgan.resources
+C:\Users\dttai\source\repos\ModernCare\ModernCare\obj\Debug\ModernCare.frmHoaDon.resources

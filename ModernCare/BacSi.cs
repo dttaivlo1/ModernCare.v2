@@ -17,7 +17,8 @@ namespace ModernCare
         Int32 SumPatien;
         void loadData()
         {
-            string query = "select * from BENHNHAN";
+            string query = "select * from BENHNHAN where TrangThai = N'Chờ Khám'  and NgayKham = (SELECT CAST( GETDATE() AS Date ) );";
+
             using (SqlConnection connection = new SqlConnection(DataConnection.connectionString))
             {
                 connection.Open();
@@ -27,7 +28,7 @@ namespace ModernCare
                 dgvChoKham.DataSource = table;
                 dgvChoKham.Refresh();
                 sumCM = connection.CreateCommand();
-                sumCM.CommandText = "SELECT count(*) from BENHNHAN";
+                sumCM.CommandText = "SELECT count(*) from BENHNHAN where TrangThai = N'Chờ Khám'  and NgayKham = (SELECT CAST( GETDATE() AS Date ) );";
                 SumPatien = (Int32)sumCM.ExecuteScalar();
                 countBN.Text = SumPatien.ToString();
 
@@ -63,7 +64,14 @@ namespace ModernCare
             frmLapPhieuKham frm = new frmLapPhieuKham();
             frm.Show();
         }
-        
+
+        private void IDNV_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmLogin lg = new frmLogin();
+            lg.Show();
+        }
+
         private void dgvChoKham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int i = dgvChoKham.CurrentRow.Index;
